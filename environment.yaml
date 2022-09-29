@@ -1,0 +1,9 @@
+name:
+channels:
+- defaults
+dependencies:
+- python>=3.9
+- pip>=21.3.1
+- pip:
+    - gym>=0.26.0
+    - mujoco>=2.2.2
