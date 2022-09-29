@@ -17,4 +17,5 @@ print("|    REGISTERING CassieRun-v0 from", envpath())
 register(
     id="CassieRun-v0",
     entry_point="gym_cassie_run.env:CassieRunEnv",
+    max_episode_steps=1000,
 )
