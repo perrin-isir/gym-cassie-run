@@ -45,7 +45,6 @@ Finally, to install the *gym-cassie-run* library in the activated virtual enviro
 </p>
 </details>
 
-Once the installation is complete, you can import the environment with:  
-```import gym_cassie_run```
-
+Once the installation is complete, you can import the environment in python with:  
+```import gym_cassie_run```  
 This directly registers the environment *CassieRun-v0* in gym.
