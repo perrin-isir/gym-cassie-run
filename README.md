@@ -1,8 +1,9 @@
 # gym-cassie-run
-RL environment in which a mujoco simulation of Agility Robotics' Cassie robot is rewarded for walking forward (with OpenAI Gym interface).
+RL environment (with OpenAI Gym interface) in which a mujoco simulation of Agility Robotics' Cassie robot is rewarded for walking/running forward as fast as possible.
 
 The Cassie model is the one available in DeepMind's [mujoco_menagerie](https://github.com/deepmind/mujoco_menagerie), and the gym environment is inspired from 
-[HalfCheetah-v4](https://github.com/openai/gym/blob/master/gym/envs/mujoco/half_cheetah_v4.py). In addition to the basic reward for forward motion, hand-designed reward signals encourage walking rather than jumping, keeping feet horizontal, and avoiding lateral movements.
+[HalfCheetah-v4](https://github.com/openai/gym/blob/master/gym/envs/mujoco/half_cheetah_v4.py). In addition to the basic reward for forward motion, hand-designed reward signals 
+encourage walking rather than jumping, keeping feet horizontal and not too far apart, and avoiding lateral movements.
 
 The following episode has been obtained after training a [TQC](https://arxiv.org/abs/2005.04269) agent for 17M timesteps, using the [xpag](https://github.com/perrin-isir/xpag) RL platform:
 
