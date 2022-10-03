@@ -30,6 +30,7 @@
 
 # ================================================================================
 
+__credits__ = ["Nicolas Perrin-Gilbert", "Rushiv Arora"]
 
 import numpy as np
 from os import path
