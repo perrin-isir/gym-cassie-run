@@ -1,8 +1,8 @@
 import os
-import gym
-from gym.envs.registration import register
+import gymnasium as gym
+from gymnasium.envs.registration import register
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 
 def envpath():
@@ -10,7 +10,7 @@ def envpath():
     return resdir
 
 
-print("gym-gmazes: ")
+print("gym-cassie-run: ")
 print("|    gym version and path:", gym.__version__, gym.__path__)
 
 print("|    REGISTERING CassieRun-v0 from", envpath())

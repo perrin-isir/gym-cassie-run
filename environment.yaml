@@ -5,5 +5,9 @@ dependencies:
 - python>=3.9
 - pip>=21.3.1
 - pip:
-    - gym>=0.26.0
+    - numpy>=1.21.5
+    - gymnasium>=0.28.1
     - mujoco>=2.2.2
+    - Pillow>=9.0.1
+    - ipywidgets>=7.6.5    
+    - mediapy >= 1.1.4

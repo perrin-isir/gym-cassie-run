@@ -35,10 +35,10 @@ __credits__ = ["Nicolas Perrin-Gilbert", "Rushiv Arora"]
 import numpy as np
 from os import path
 
-from gym import utils
-from gym import spaces
-from gym.envs.mujoco import MujocoEnv
-from gym.spaces import Box
+from gymnasium import utils
+from gymnasium import spaces
+from gymnasium.envs.mujoco import MujocoEnv
+from gymnasium.spaces import Box
 
 DEFAULT_CAMERA_CONFIG = {
     "distance": 4.0,

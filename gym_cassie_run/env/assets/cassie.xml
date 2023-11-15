@@ -1,4 +1,7 @@
 <mujoco model="cassie">
+  <visual>
+    <headlight ambient="0.3 0.3 0.3" diffuse="0.5 0.5 0.5" specular="0.6 0.6 0.6"/>
+  </visual>
   <compiler eulerseq="zyx" meshdir="." texturedir="." autolimits="true"/>
 
   <option timestep="0.0005"/>
@@ -23,8 +26,8 @@
 
   <asset>
     <texture name="cassie" file="cassie-texture.png" type="2d"/>
-    <texture builtin="checker" height="100" name="texplane" rgb1="0 0 0" rgb2="0.8 0.8 0.8" type="2d" width="100"/>
-    <material name="MatPlane" reflectance="0.5" shininess="1" specular="1" texrepeat="60 60" texture="texplane"/>
+    <texture builtin="checker" height="100" name="texplane" rgb1="0.6 0.5 0.6" rgb2="0.3 0.3 0.4" type="2d" width="100"/>
+    <material name="MatPlane" reflectance="0.3" emission="0.0" shininess="0.03" specular="0.5" texrepeat="600 600" texture="texplane"/>
     <material name="cassie"    texture="cassie"/>
     <mesh name="cassie-pelvis"     file="pelvis.obj"/>
     <mesh name="left-hip-roll"     file="hip-roll.obj"/>
@@ -54,10 +57,9 @@
   </asset>
 
   <worldbody>
-    <light name="spotlight" mode="targetbodycom" target="cassie-pelvis" pos="0 -1 2"/>
-    <geom conaffinity="7" condim="3" material="MatPlane" name="floor" pos="0 0 0" rgba="0.8 0.9 0.8 1" size="40 40 40" type="plane"/>
+    <geom conaffinity="7" condim="3" material="MatPlane" name="floor" pos="0 0 0" rgba="0.8 0.9 0.8 1" size="400 400 400" type="plane"/>
     <body name="cassie-pelvis" pos="0 0 1.1" childclass="cassie">
-      <camera name="track" pos="0 -3 1" zaxis="0 -1 0.5" mode="track"/>
+      <camera name="track" pos="-0.02 -2 0.5" zaxis="0 -1 0.5" mode="track"/>
       <inertial pos="0.05066 0.000346 0.02841" mass="10.33" fullinertia="0.085821 0.049222 0.08626 1.276e-05 -0.00016022 -0.000414"/>
       <freejoint/>
       <geom type="mesh" mesh="cassie-pelvis" euler="0 0 90"/>
@@ -67,6 +69,7 @@
       <geom size="0.095" fromto="-.04 -.14 .01 .02 -.14 .01" class="collision"/>
       <site name="imu" size="0.01" pos="0.03155 0 -0.07996"/>
       <body name="left-hip-roll" pos="0.021 0.135 0" xyaxes="0 0 -1 0 1 0">
+        <light mode="trackcom" ambient="0.0 0.0 0.0" diffuse="0.6 0.6 0.6" specular="0.6 0.6 0.6" directional="false" pos="0.5 0 3" dir="0 0 -1"/>
         <inertial pos="-0.01793 0.0001 -0.04428" mass="1.82" fullinertia="0.003431 0.003793 0.002135 -6.65e-07 -0.00084 3.99e-06"/>
         <joint name="left-hip-roll" type="hinge" range="-15 22.5" damping="1" armature="0.038125"/>
         <geom type="mesh" mesh="left-hip-roll" euler="0 0 90"/>
