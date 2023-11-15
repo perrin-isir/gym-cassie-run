@@ -26,8 +26,8 @@
 
   <asset>
     <texture name="cassie" file="cassie-texture.png" type="2d"/>
-    <texture builtin="checker" height="100" name="texplane" rgb1="0.6 0.5 0.6" rgb2="0.3 0.3 0.4" type="2d" width="100"/>
-    <material name="MatPlane" reflectance="0.3" emission="0.0" shininess="0.03" specular="0.5" texrepeat="600 600" texture="texplane"/>
+    <texture builtin="checker" height="100" name="texplane" rgb1="0.55 0.5 0.6" rgb2="0.725 0.65 0.8" type="2d" width="100"/>
+    <material name="MatPlane" reflectance="0.3" emission="0.0" shininess="0.0" specular="0.5" texrepeat="600 600" texture="texplane"/>
     <material name="cassie"    texture="cassie"/>
     <mesh name="cassie-pelvis"     file="pelvis.obj"/>
     <mesh name="left-hip-roll"     file="hip-roll.obj"/>
