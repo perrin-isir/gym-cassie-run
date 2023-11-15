@@ -5,7 +5,7 @@ The Cassie model is the one available in DeepMind's [mujoco_menagerie](https://g
 [HalfCheetah-v4](https://github.com/openai/gym/blob/master/gym/envs/mujoco/half_cheetah_v4.py). In addition to the basic reward for forward motion, hand-designed reward signals 
 encourage walking rather than jumping, keeping feet horizontal and not too far apart, and avoiding lateral movements.
 
-The following episode has been obtained after training a [TQC](https://arxiv.org/abs/2005.04269) agent for 17M timesteps, using the [xpag](https://github.com/perrin-isir/xpag) RL platform:
+The following episode has been obtained after training a [TQC](https://arxiv.org/abs/2005.04269) agent for 17M timesteps, using the [xpag](https://github.com/perrin-isir/xpag) RL platform (at real speed, 100 timesteps = 1 second, cf. top left corner of the gif):
 
 ![](episode.gif)
 
