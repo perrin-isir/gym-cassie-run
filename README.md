@@ -9,7 +9,7 @@ The following episode has been obtained after training a [TQC](https://arxiv.org
 
 ![](episode.gif)
 
-It can also be viewed with the [view_episode.ipynb](https://github.com/perrin-isir/gym-cassie-run/blob/main/gym_cassie_run/demo_trajectory/view_episode.ipynb) notebook in the [demo_trajectory](https://github.com/perrin-isir/gym-cassie-run/blob/main/gym_cassie_run/demo_trajectory/) folder.
+It can also be viewed with the [view_episode.ipynb](https://github.com/perrin-isir/gym-cassie-run/blob/main/demo_trajectory/view_episode.ipynb) notebook in the [demo_trajectory](https://github.com/perrin-isir/gym-cassie-run/blob/main/demo_trajectory/) folder.
 
 ## Installation
 
