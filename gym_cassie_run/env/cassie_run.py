@@ -81,7 +81,7 @@ class CassieRunEnv(MujocoEnv, utils.EzPickle):
         MujocoEnv.__init__(
             self,
             path.join(path.dirname(__file__), "assets", "cassie.xml"),
-            20,
+            20,  # frame_skip
             observation_space=observation_space,
             **kwargs
         )
